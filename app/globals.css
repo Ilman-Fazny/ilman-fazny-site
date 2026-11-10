@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  /* Design tokens - Light mode spec sheet */
+  --background: #ECEEF1;
+  --surface: #F7F8FA;
+  --ink: #0F1115;
+  --muted: #5A606B;
+  --rules: #CDD1D8;
+  --accent: #F03A17;
+  --accent-ink: #C22A0C; /* TODO: verify contrast */
+  --status: #1F9D55;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rules: var(--rules);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-status: var(--status);
+
+  --font-sans: var(--font-schibsted), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--ink);
+  font-family: var(--font-schibsted), system-ui, -apple-system, sans-serif;
+}
